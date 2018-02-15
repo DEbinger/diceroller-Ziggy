@@ -1,6 +1,6 @@
 export function roll20S1(){
     let diceroll20 = Math.floor(Math.random()  * 20) +1;
-    console.log("D20S1:",diceroll20)
+    console.log("D20S1:",diceroll20);
   }
 
 export function roll8S1(){
@@ -19,7 +19,7 @@ export function roll4S1(){
 
 export function roll20S2(){
     let diceroll20 = Math.floor(Math.random()  * 20) +1;
-    console.log("D20S2:",diceroll20)
+    console.log("D20S2:",diceroll20);
   }
 
 export function roll8S2(){
@@ -38,7 +38,7 @@ export function roll4S2(){
 
 export function roll20S3(){
     let diceroll20 = Math.floor(Math.random()  * 20) +1;
-    console.log("D20S3:",diceroll20)
+    console.log("D20S3:",diceroll20);
   }
 
 export function roll8S3(){

@@ -12,7 +12,7 @@ const styles = EStyleSheet.create({
     paddingVertical: 20,
     paddingHorizontal: 35,
     '@media ios': {
-      borderRadius: 100,
+      borderRadius: 300,
       width: '35%'
     },
     '@media android': {
