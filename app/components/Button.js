@@ -28,7 +28,7 @@ const styles = EStyleSheet.create({
 });
 
 export const Button = ({ text, onPress }) => {
-  if (Platform.OS === 'ios') {
+  {
     return (
       <TouchableHighlight
         onPress={onPress}

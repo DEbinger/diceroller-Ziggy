@@ -1,5 +1,15 @@
 {
   "expo": {
-    "sdkVersion": "25.0.0"
+    "name": "Dice Roller Ziggy",
+    "icon": "./logo.png",
+    "description": "A dice rolling app for Ziggy the Baron Bard.",
+    "sdkVersion": "25.0.0",
+    "version": "1.0.0",
+    "ios": {
+      "bundleIdentifier": "com.davidebinger.dicerollerziggy"
+    },
+    "android": {
+      "package": "com.davidebinger.dicerollerziggy"
+    }
   }
 }
