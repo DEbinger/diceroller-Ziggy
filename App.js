@@ -92,7 +92,7 @@ class HomeScreen extends React.Component {
       <View style={styles.container}>
         <ScrollView style={styles.homeContainer}>
           <Text style={styles.textStyle}
-            onPress= { ()=> navigate('Ziggy')}><LogoTitle1 />{"\n"}Arcane Strike{"\n"}
+            onPress= { ()=> navigate('Ziggy')}><LogoTitle1 />Arcane Strike{"\n"}
           </Text>
           <Text style={styles.textStyle}
             onPress= { ()=> navigate('ZiggyASS')}><LogoTitle2 />{"\n"}Arcane Strike{"\n"}Song{"\n"}

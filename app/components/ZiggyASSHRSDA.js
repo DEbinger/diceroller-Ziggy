@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   ScrollView,
   Dimensions,
+  ImageBackground,
        } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { Button } from './Button';
@@ -18,7 +19,7 @@ EStyleSheet.build();
 
 export default class ZiggyASHS extends React.Component {
   static navigationOptions = {
-    title: '8|8|8|3  Dam 13',
+    title: '8|8|8|3  Dam +13',
   };
   constructor(props) {
     super(props);
@@ -92,15 +93,7 @@ export default class ZiggyASHS extends React.Component {
     const D20S3Style = this.state.NumberHolderD20S3 === 20 | this.state.NumberHolderD20S3 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     const D20S4Style = this.state.NumberHolderD20S4 === 20 | this.state.NumberHolderD20S4 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
     return (
-       <ScrollView style={styles.bard3}>
-          <View style={styles.top3}>
-            <TouchableOpacity onPress={imgClick} style={styles.profileimage}>
-              <Image
-                style={styles.image}
-                source={require('../images/bard6.jpg')}
-              />
-            </TouchableOpacity>
-          </View>
+       <ImageBackground source={require('../images/bard6.jpg')} style={styles.container}>
 
           <Animatable.View ref="view"
             style={styles.center3} >
@@ -231,7 +224,7 @@ export default class ZiggyASHS extends React.Component {
                 numberOfLines={1}>{this.state.NumberHolderD6S4}</Text>
             </Animatable.View>
           </View>
-      </ScrollView>
+      </ImageBackground>
     );
   }
 }
@@ -239,11 +232,7 @@ export default class ZiggyASHS extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      flexDirection: 'row',
       flexWrap: 'wrap',
-      backgroundColor: 'goldenrod',
-      alignContent: 'center',
-      justifyContent: 'center',
       alignItems: 'center',
     },
     bard3: {
@@ -275,15 +264,13 @@ const styles = StyleSheet.create({
       maxWidth: '100%',
     },
     center3: {
-      height: '10%',
-      backgroundColor: '#085143',
+      height: '30%',
       justifyContent: 'center',
       alignContent: 'center',
       alignItems: 'center',
     },
     bottom3: {
       height: '57%',
-      backgroundColor: '#085143',
       flexDirection: 'row',
       flexWrap: 'wrap',
       padding: 2,

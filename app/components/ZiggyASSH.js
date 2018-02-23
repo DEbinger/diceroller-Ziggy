@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   ScrollView,
   Dimensions,
+  ImageBackground,
        } from 'react-native';
 import EStyleSheet from 'react-native-extended-stylesheet';
 import { Button } from './Button';
@@ -18,7 +19,7 @@ EStyleSheet.build();
 
 export default class ZiggyASHS extends React.Component {
   static navigationOptions = {
-    title: '12|12|7  Dam 9',
+    title: '12|12|7  Dam +9',
   };
   constructor(props) {
     super(props);
@@ -83,15 +84,7 @@ export default class ZiggyASHS extends React.Component {
     const D20S3Style = this.state.NumberHolderD20S3 === 20 | this.state.NumberHolderD20S3 === 1 ? styles.bottomItemInner20picked : styles.bottomItemInner20;
 
     return (
-       <ScrollView style={styles.bard3}>
-          <View style={styles.top3}>
-            <TouchableOpacity onPress={imgClick} style={styles.profileimage}>
-              <Image
-                style={styles.image}
-                source={require('../images/bard4.jpg')}
-              />
-            </TouchableOpacity>
-          </View>
+       <ImageBackground source={require('../images/bard4.jpg')} style={styles.container}>
 
           <Animatable.View ref="view"
             style={styles.center3} >
@@ -193,7 +186,7 @@ export default class ZiggyASHS extends React.Component {
             </Animatable.View>
 
           </View>
-      </ScrollView>
+      </ImageBackground>
     );
   }
 }
@@ -201,11 +194,7 @@ export default class ZiggyASHS extends React.Component {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      flexDirection: 'row',
       flexWrap: 'wrap',
-      backgroundColor: 'goldenrod',
-      alignContent: 'center',
-      justifyContent: 'center',
       alignItems: 'center',
     },
     bard3: {
@@ -237,15 +226,13 @@ const styles = StyleSheet.create({
       maxWidth: '100%',
     },
     center3: {
-      height: '10%',
-      backgroundColor: '#085143',
+      height: '50%',
       justifyContent: 'center',
       alignContent: 'center',
       alignItems: 'center',
     },
     bottom3: {
-      height: '57%',
-      backgroundColor: '#085143',
+      height: '50%',
       flexDirection: 'row',
       flexWrap: 'wrap',
       padding: 2,
